@@ -1,0 +1,171 @@
+/*сетка*/
+@import 'grid-float.css' all;
+
+/*шрифты*/
+@import 'fonts.css';
+
+
+
+
+
+/*стили по умолчанию*/
+a {
+    text-decoration: none;
+}
+
+
+
+/*отступы тела страницы*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*фон шапки страницы*/
+header {
+    background-color: #cfe5ef;
+}
+
+
+
+/*позиционированя логотипа*/
+.header__title {
+    float: left;
+    padding-left: 43px;
+}
+
+
+
+
+
+/*ссылка на логотип*/
+.header__title a {
+    font-family: 'RobotoBlackItalic', sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    color: #333333;
+    text-transform: uppercase;
+    position: relative;
+    line-height: 150px;
+}
+
+/*изминение цвета при наведении на Blog+*/
+.header__title a:hover {
+    color: #52359d;
+}
+
+/*фоновая картика логотипа*/
+.header__title a::before {
+    content: '';
+    background-image: url(./bg-img/logo.png);
+    position: absolute;
+    width: 50px;
+    height: 62px;
+    left: -57px;
+    top: 0;
+}
+
+/*активная фоновая картинка логотипа*/
+.header__title a:active:before {
+    content: '';
+    background-image: url(./bg-img/logo-active.png);
+    position: absolute;
+    width: 50px;
+    height: 62px;
+    left: -57px;
+    top: 0;
+}
+
+/*фоновая картинка логотипа при наведении мышью*/
+.header__title a:hover:before {
+    content: '';
+    background-image: url(./bg-img/logo-hover.png);
+    position: absolute;
+    width: 50px;
+    height: 62px;
+    left: -57px;
+    top: 0;
+}
+
+
+
+/*навигационное меню*/
+nav {
+    margin-left: 50px;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+
+/*поиционирование элементов навигации*/
+nav ul li {
+    display: inline-block;
+}
+nav ul li span:first-child {
+    content: '\2758';
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 20px;
+}
+
+/*стили ссылок в меню*/
+nav a {
+    display: block;
+    padding: 15px 20px;
+    font-family: 'RobotoBold', sans-serif;
+    font-weight: 700;
+    color: #333333;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/*цвет фона при наведения курсора*/
+nav a:hover {
+    text-decoration: underline;
+    background-color: #fff;
+    color: #52359d;
+}
+
+/*скрытие выпадающих списков*/
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+
+/*формат ссылок в выпадающем меню певого уровня*/
+nav ul ul li {
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+nav ul ul a {
+    font-family: 'RobotoRegular', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #333;
+    text-transform: capitalize;
+    padding: 0;
+}
+/*отображение выпадающего списка при наведении*/
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+
+/*первый уровень выпадающего списка*/
+nav ul ul li {
+    min-width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+    background-color: #fff;
+}
