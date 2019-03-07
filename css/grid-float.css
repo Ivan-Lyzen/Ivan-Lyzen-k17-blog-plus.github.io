@@ -22,7 +22,9 @@
 }
 
 .container {
-    width: 1200px;
+    max-width: 1252px;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
 }
 .wrapper:after {
@@ -71,12 +73,7 @@
 .col-12 { width: 100%; }
 
 /* с отступами */
-
-.col--gutters {
-    margin: 0 -10px;
-}
-
-.col--gutters > * {
+.col-gutters > * {
     padding: 0 10px;
     box-sizing: border-box;
     margin-bottom: 20px;

@@ -19,6 +19,7 @@ a {
 body {
     margin: 0;
     padding: 0;
+    background-color: #fff;
 }
 
 
@@ -67,6 +68,7 @@ header {
     top: 0;
 }
 
+
 /*активная фоновая картинка логотипа*/
 .header__title a:active:before {
     content: '';
@@ -79,15 +81,6 @@ header {
 }
 
 /*фоновая картинка логотипа при наведении мышью*/
-.header__title a:hover:before {
-    content: '';
-    background-image: url(./bg-img/logo-hover.png);
-    position: absolute;
-    width: 50px;
-    height: 62px;
-    left: -57px;
-    top: 0;
-}
 
 
 
@@ -100,19 +93,13 @@ nav ul {
     margin: 0;
     list-style: none;
     position: relative;
+    font-size: 0;
 }
 
 
 /*поиционирование элементов навигации*/
 nav ul li {
     display: inline-block;
-}
-nav ul li span:first-child {
-    content: '\2758';
-    position: absolute;
-    top: 0;
-    width: 1px;
-    height: 20px;
 }
 
 /*стили ссылок в меню*/
@@ -130,15 +117,26 @@ nav a {
 /*цвет фона при наведения курсора*/
 nav a:hover {
     text-decoration: underline;
-    background-color: #fff;
     color: #52359d;
+}
+
+nav a:active {
+    color: #333;
+}
+
+
+nav li:hover {
+    background-color: #fff;
 }
 
 /*скрытие выпадающих списков*/
 nav ul ul {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 90%;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.3);
+    border: 1px solid #fff;
+    border-radius: 5px;
 }
 
 
@@ -155,9 +153,26 @@ nav ul ul a {
     text-transform: capitalize;
     padding: 0;
 }
+
+.header__nav-item {
+    position: relative;
+}
+.header__nav-link:after {
+    content: '\2758';
+    position: absolute;
+    top: 14px;
+    right: -2px;
+}
+.header__nav-link:before {
+    content: '\2758';
+    position: absolute;
+    top: 14px;
+    left: -3px;
+}
 /*отображение выпадающего списка при наведении*/
 nav ul li:hover > ul {
     display: inherit;
+    z-index: 1;
 }
 
 
@@ -168,4 +183,305 @@ nav ul ul li {
     display: list-item;
     position: relative;
     background-color: #fff;
+}
+
+
+
+
+/*кнопка вход*/
+.header__button {
+    float: right;
+}
+
+.header__button a {
+    padding: 20px 30px;
+    background-color: #fff;
+    font-family: 'RobotoRegular', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #333333;
+}
+
+.header__button a:hover {
+    background-color: #52359d;
+    color: #fff;
+}
+.header__button a:active {
+    background-color: #333333;
+    color: #999999;
+}
+
+
+
+
+
+/*КОНТЕНТ*/
+content {
+    width: 100%;
+    background-color: transparent;
+    float: left;
+}
+
+
+
+.content__title {
+    position: relative;
+}
+
+/*определяем заголовок*/
+.content__title h3 {
+    font-family: 'RobotoBold', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #000000;
+}
+
+
+/*нижнее подчеркивание*/
+.content__title h3:before {
+    content: '';
+    left: 0;
+    bottom: -15px;
+    width: 17%;
+    height: 5px;
+    background-color: #c3c3c3;
+    position: absolute;
+}
+
+/*определение стилей для блока с розметочной сеткой*/
+.content__box {
+    width: 100%;
+    margin-top: 30px;
+    float: left;
+    margin-bottom: 75px;
+}
+.col {
+    height: 48px;
+    background-color: #e2e2e2;
+    border: 1px solid #9f9f9f;
+}
+.col-sleet {
+    padding: 0;
+}
+
+
+/*блок с отзывами*/
+.reviews {
+    margin-top: 30px;
+    float: left;
+    width: 100%;
+    height: auto;
+}
+.reviews-line {
+    border-top: 1px solid #c6c6c6;
+    border-bottom: 1px solid #c6c6c6;
+    padding-bottom: 35px;
+    padding-top: 35px;
+}
+/*блок с аватаркой*/
+.reviews__img {
+    border: 1px solid #a2a2a2;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 16%;
+    height: auto;
+    float: left;
+}
+
+/*аватарка*/
+.reviews__img img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    vertical-align: bottom;
+}
+
+/*Блоки для ФИО и отзывом*/
+.reviews__name, .reviews__text {
+    float: left;
+    width: 80%;
+    height: auto;
+}
+
+/*Блок для ФИО*/
+.reviews__name, .reviews__text {
+    padding-left: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+/*блок с датой*/
+p.reviews__name-time {
+    padding-left: 60px;
+    position: relative;
+}
+
+/*календарь*/
+p.reviews__name-time:before {
+    content: '';
+    position: absolute;
+    background-image: url(./bg-img/kalendar.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 35px;
+    width: 16px;
+    height: 18px;
+}
+
+/*слили для параграфов*/
+.reviews__name p {
+    float: left;
+}
+
+.reviews__name p span {
+    font-family: 'RobotoBold', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    text-transform: capitalize;
+}
+.reviews__name-time {
+    font-family: 'RobotoRegular', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #bfbfbf;
+}
+
+/*текст отзыва*/
+.reviews__text p {
+    font-family: 'RobotoRegular', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #797979;
+}
+
+
+
+
+/*Галерея*/
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery h5 {
+    font-family: 'RobotoBold', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #000000;
+    text-transform: capitalize;
+    margin-top: 65px;
+    position: relative;
+}
+
+/*нижнее подчеркивание*/
+.gallery h5:before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 5px;
+    background-color: #c3c3c3;
+    top: 100%;
+    margin-top: 10px;
+    left: -60%;
+}
+
+/*блок галереи с фотографиями*/
+.gallery__item {
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+}
+
+.gallery__img img {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+.gallery__item:hover {
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.3);
+}
+
+.gullery__box {
+    float: left;
+    margin-bottom: 150px;
+}
+
+.gallery__img {
+    position: relative;
+}
+/*.gallery__img:after {
+    content: '';
+    background-image: url(./bg-img/layer-bottom.png);
+    position: absolute;
+    bottom: -15px;
+    right: -15px;
+    width: 268px;
+    height: 268px;
+}
+.gallery__img:before {
+    content: '';
+    background-image: url(./bg-img/layer-top.png);
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 268px;
+    height: 268px;
+}*/
+
+.gallery__item:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 60%;
+    top: 10px;
+    left: 9px;
+    background-color: #e2e2e2;
+}
+
+.gallery__item:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 60%;
+    bottom: 26%;
+    right: 10px;
+    background-color: #e2e2e2;
+}
+
+.gallery__img:before {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    top: -10px;
+    left: -10px;
+    background-color: #e2e2e2;
+}
+
+.gallery__img:after {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    bottom: -10px;
+    right: -10px;
+    background-color: #e2e2e2;
+}
+
+
+/*описание картинок галекреи*/
+.gallery__desc p {
+    font-family: 'RobotoRegular', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #000000;
+    padding-top: 20px;
+    text-align: left;
 }
