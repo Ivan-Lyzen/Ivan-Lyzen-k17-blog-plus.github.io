@@ -450,7 +450,7 @@ p.reviews__name-time:before {
     position: absolute;
     width: 1px;
     height: 60%;
-    bottom: 26%;
+    bottom: 24%;
     right: 10px;
     background-color: #e2e2e2;
 }
