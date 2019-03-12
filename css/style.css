@@ -1,5 +1,5 @@
 /*сетка*/
-@import 'grid-float.css' all;
+@import 'grid-float.css'all;
 
 /*шрифты*/
 @import 'fonts.css';
@@ -43,7 +43,7 @@ header {
 
 /*ссылка на логотип*/
 .header__title a {
-    font-family: 'RobotoBlackItalic', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 48px;
     color: #333333;
@@ -88,6 +88,7 @@ header {
 nav {
     margin-left: 50px;
 }
+
 nav ul {
     padding: 0;
     margin: 0;
@@ -106,7 +107,7 @@ nav ul li {
 nav a {
     display: block;
     padding: 15px 20px;
-    font-family: 'RobotoBold', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: #333333;
     font-size: 20px;
@@ -134,7 +135,7 @@ nav ul ul {
     display: none;
     position: absolute;
     top: 90%;
-    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
     border: 1px solid #fff;
     border-radius: 5px;
 }
@@ -145,8 +146,9 @@ nav ul ul li {
     padding: 5px 10px;
     box-sizing: border-box;
 }
+
 nav ul ul a {
-    font-family: 'RobotoRegular', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 20px;
     color: #333;
@@ -157,18 +159,21 @@ nav ul ul a {
 .header__nav-item {
     position: relative;
 }
+
 .header__nav-link:after {
     content: '\2758';
     position: absolute;
     top: 14px;
     right: -2px;
 }
+
 .header__nav-link:before {
     content: '\2758';
     position: absolute;
     top: 14px;
     left: -3px;
 }
+
 /*отображение выпадающего списка при наведении*/
 nav ul li:hover > ul {
     display: inherit;
@@ -196,7 +201,7 @@ nav ul ul li {
 .header__button a {
     padding: 20px 30px;
     background-color: #fff;
-    font-family: 'RobotoRegular', sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     font-size: 20px;
     color: #333333;
@@ -206,11 +211,11 @@ nav ul ul li {
     background-color: #52359d;
     color: #fff;
 }
+
 .header__button a:active {
     background-color: #333333;
     color: #999999;
 }
-
 
 
 
@@ -230,7 +235,7 @@ content {
 
 /*определяем заголовок*/
 .content__title h3 {
-    font-family: 'RobotoBold', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 24px;
     color: #000000;
@@ -255,11 +260,13 @@ content {
     float: left;
     margin-bottom: 75px;
 }
+
 .col {
     height: 48px;
     background-color: #e2e2e2;
     border: 1px solid #9f9f9f;
 }
+
 .col-sleet {
     padding: 0;
 }
@@ -272,12 +279,14 @@ content {
     width: 100%;
     height: auto;
 }
+
 .reviews-line {
     border-top: 1px solid #c6c6c6;
     border-bottom: 1px solid #c6c6c6;
     padding-bottom: 35px;
     padding-top: 35px;
 }
+
 /*блок с аватаркой*/
 .reviews__img {
     border: 1px solid #a2a2a2;
@@ -297,14 +306,16 @@ content {
 }
 
 /*Блоки для ФИО и отзывом*/
-.reviews__name, .reviews__text {
+.reviews__name,
+.reviews__text {
     float: left;
     width: 80%;
     height: auto;
 }
 
 /*Блок для ФИО*/
-.reviews__name, .reviews__text {
+.reviews__name,
+.reviews__text {
     padding-left: 20px;
     box-sizing: border-box;
     display: flex;
@@ -336,14 +347,15 @@ p.reviews__name-time:before {
 }
 
 .reviews__name p span {
-    font-family: 'RobotoBold', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 20px;
     color: #000000;
     text-transform: capitalize;
 }
+
 .reviews__name-time {
-    font-family: 'RobotoRegular', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: #bfbfbf;
@@ -351,7 +363,7 @@ p.reviews__name-time:before {
 
 /*текст отзыва*/
 .reviews__text p {
-    font-family: 'RobotoRegular', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -369,7 +381,7 @@ p.reviews__name-time:before {
 }
 
 .gallery h5 {
-    font-family: 'RobotoBold', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 24px;
     color: #000000;
@@ -404,8 +416,9 @@ p.reviews__name-time:before {
     height: auto;
     vertical-align: top;
 }
+
 .gallery__item:hover {
-    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
 }
 
 .gullery__box {
@@ -416,6 +429,7 @@ p.reviews__name-time:before {
 .gallery__img {
     position: relative;
 }
+
 /*.gallery__img:after {
     content: '';
     background-image: url(./bg-img/layer-bottom.png);
@@ -478,10 +492,556 @@ p.reviews__name-time:before {
 
 /*описание картинок галекреи*/
 .gallery__desc p {
-    font-family: 'RobotoRegular', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 12px;
     color: #000000;
     padding-top: 20px;
     text-align: left;
+}
+
+
+
+
+/*Форма*/
+.form__imput {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form__imput > label {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+label > p,
+.selected__item > p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #000000;
+    line-height: 18px;
+    text-transform: capitalize;
+}
+
+.form__label > label,
+.selected__item {
+    width: 25%;
+    height: auto;
+    margin: 0 auto;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.form__label > label:last-child,
+.selected__item:last-child,
+    {
+    padding-right: 0;
+}
+
+.form__label > label > input,
+select {
+    width: 100%;
+}
+
+.form__label,
+.form__selected {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea#area__left:focus,
+textarea#area__right:focus,
+textarea#area__left-bottom:focus,
+textarea#area__right-bottom:focus {
+    background-color: #e9f8ff;
+    border: 1px solid #999999;
+}
+
+input[type="text"],
+select {
+    border-left: 1px solid #999999;
+    border-right: 1px solid #999999;
+    border-top: 1px solid #a0a0a0;
+    border-bottom: 1px solid #a0a0a0;
+    padding: 15px 0;
+    box-sizing: border-box;
+    outline: none;
+    padding-left: 15px;
+}
+
+input[type="text"]::-moz-placeholder {
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+input[type="text"]::-webkit-input-placeholder {
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+input[type="text"]:-ms-input-placeholder {
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+input[type="text"]::-ms-input-placeholder {
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+input[type="text"]::placeholder {
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+
+.imp__img > label {
+    position: relative;
+}
+
+.imp__img > label > input {
+    padding-left: 45px;
+}
+
+.imp__img > label > span {
+    background-image: url(bg-img/lock.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 16px;
+    height: 22px;
+    bottom: 15px;
+    left: 20px;
+}
+
+input[type="text"]:focus + span {
+    background-image: url(bg-img/lock-active.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 16px;
+    height: 22px;
+    bottom: 15px;
+    left: 20px;
+}
+
+
+.select-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.select-wrapper > span {
+    background-image: url(bg-img/phone.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 15px;
+    left: 20px;
+}
+
+.select-wrapper:focus-within > span {
+    background-image: url(bg-img/phone-target.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 15px;
+    left: 20px;
+}
+
+select[name="phone"] {
+    padding-left: 45px;
+}
+
+.select-wrapper::before {
+    content: '';
+    position: absolute;
+    background-image: url(bg-img/select-arrow.png);
+    right: 10px;
+    top: 22px;
+    width: 12px;
+    height: 8px;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.select-wrapper:focus-within::before {
+    content: '';
+    position: absolute;
+    background-image: url(bg-img/select-arrow.png);
+    right: 10px;
+    top: 22px;
+    width: 12px;
+    height: 8px;
+    transform: rotate(180deg);
+}
+
+
+
+
+/*==================== чекбоксы =====================*/
+.form__checkbox {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.check__title {
+    width: 100%;
+    height: auto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.check__left,
+.check__right {
+    width: 50%;
+    height: auto;
+}
+
+.check__left > p,
+.check__right > p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #000000;
+    text-transform: capitalize;
+}
+
+.check__left input,
+.check__right input {
+    display: none;
+}
+
+.check__left label,
+.check__right label {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #000;
+    line-height: 18px;
+    text-transform: capitalize;
+}
+
+.check__left input + span,
+.check__right input + span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #97a1aa;
+    position: relative;
+    margin-right: 10px;
+}
+
+input[type="checkbox"] + span {
+    border-radius: 5px;
+}
+
+input[type="radio"] + span {
+    border-radius: 50%;
+}
+
+input[type="radio"] + span:before,
+input[type="checkbox"] + span:before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    background-color: #52359d;
+    transform: scale(0);
+    transition: .4s;
+}
+
+input[type="checkbox"] + span:before {
+    border-radius: 3px;
+}
+
+input[type="radio"] + span:before {
+    border-radius: 50%;
+}
+
+input[type="checkbox"]:checked + span:before,
+input[type="radio"]:checked + span:before {
+    transform: scale(1);
+}
+
+input[type="checkbox"]:checked + span,
+input[type="radio"]:checked + span {
+    border: 1px solid #52359d;
+}
+
+input[type="checkbox"]:checked + .spatar,
+input[type="radio"]:checked + .spatar {
+    color: #52359d;
+}
+
+.check__left > label > span,
+.check__right > label > span {
+    top: 5px;
+}
+
+.spatar:target {
+    color: yellow;
+}
+
+input[type="checkbox"]:checked ~ span,
+input[type="radio"]:checked ~ span {
+    color: #52359d;
+}
+
+.check__text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000;
+    text-transform: initial;
+}
+
+
+
+
+/*==================== Text Area ======================*/
+.form__area {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form__area-left,
+.form__area-right {
+    width: 49%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.form__area-left {
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.form__area-right {
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+textarea#area__left,
+textarea#area__right,
+textarea#area__left-bottom,
+textarea#area__right-bottom {
+    max-width: 100%;
+    width: 100%;
+    max-height: 170px;
+    height: 170px;
+    margin-top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+textarea#area__left::-moz-placeholder {
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+textarea#area__left::-webkit-input-placeholder {
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+textarea#area__left:-ms-input-placeholder {
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+textarea#area__left::-ms-input-placeholder {
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+textarea#area__left::placeholder {
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+
+
+
+.area__img {
+    position: relative;
+}
+
+.area__img > textarea#area__right-bottom,
+.area__img > textarea#area__left-bottom {
+    padding-left: 50px;
+    box-sizing: border-box;
+}
+
+.form__area-left.area__img > span {
+    position: absolute;
+    top: 37px;
+    left: 15px;
+    width: 22px;
+    height: 22px;
+    background-image: url(./bg-img/chat.png);
+}
+
+.area__img > span {
+    position: absolute;
+    top: 37px;
+    left: 30px;
+    width: 22px;
+    height: 22px;
+    background-image: url(./bg-img/chat.png);
+}
+
+textarea#area__left-bottom:focus + span,
+textarea#area__right-bottom:focus + span {
+    background-image: url(./bg-img/chat-targer.png);
+}
+
+.form__area-right label,
+.form__area-left label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #000000;
+    line-height: 18px;
+    text-transform: capitalize;
+}
+
+
+
+
+/*==================== Batton ====================*/
+.form__batton {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form__batton > input {
+    display: none;
+}
+
+.form__batton > label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    border: 1px solid #999;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.form__batton > label:hover {
+    background-color: #52359d;
+    color: #fff;
+    border: 1px solid #52359d;
+}
+
+.form__batton > label:active {
+    background-color: #333;
+    color: #999;
+    border: 1px solid #333;
+}
+
+.file {
+    position: relative;
+}
+
+.file > span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 12px;
+    left: 20px;
+    background-image: url(./bg-img/upload.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+label.file:hover > span {
+    background-image: url(./bg-img/upload-hover.png);
+}
+
+label.file:active > span {
+    background-image: url(./bg-img/upload-active.png);
+}
+
+label.file {
+    padding-left: 45px
+}
+
+/*========== form ======*/
+form {
+    margin-bottom: 100px;
 }
